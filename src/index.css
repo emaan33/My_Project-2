@@ -1,13 +1,291 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+/* .costom-shadow{
+    box-shadow: inset 2px 2px 15px rgba(0, 0, 0, 0.6)
+} */
+
+/* .div {
+   box-shadow: 0;
+    transition: box-shadow 1s ease-in-out;
+
+    box-shadow: 2px 10px 3px #ff0000;
+  } */
+  .custom-box-shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6), 0 1px 3px rgba(0, 0, 0, 0.6);
+  }
+  .custom-inner-shadow {
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .text:hover .changeme{
+   
+    color: rgb(76, 76, 216);
+  }
+ 
+  .button:hover .hovbtn{
+    transform: translateX(17%);
+  }
+
+  .parent:hover .child{
+    transform: rotate(180deg);
+  }
+
+  .text:hover .color{
+    color: black;
+  }
+
+  .main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+  }
+  .videoo{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+    top:0
+  }
+  /* .bggg{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+width: 100%;
+height: 100%;
+  } */
+  .menu{
+    width: 100%;
+    height: 6em;
+    border-bottom: 2px solid black;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+.changebg{
+  animation: changeBg 5s linear infinite;
+}
+  @keyframes changeBg{
+    0%{
+        background-color: rgb(107, 35, 102);
+    }
+    50%{
+        background-color: rgb(53, 150, 65);
+    }
+    100%{
+        background-color: rgb(119, 13, 73);
+    }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.container{
+  width: 500px;
+  height: 500px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
+.ring{
+  width: 200px;
+  height: 200px;
+border: 0px solid rgb(6, 47, 47);
+border-radius: 50%;
+position: absolute;
+}
+
+
+.ring:nth-child(1){
+  border-bottom-width: 8px;
+  border-color: rgb(255, 255, 255);
+  animation: rot 2s linear infinite;
+} 
+@keyframes rot{
+  0%{
+      transform: rotateX(35deg) rotateY(-45deg) rotate(0deg);
+  }
+  100%{
+      transform: rotateX(35deg) rotateY(-45deg) rotate(360deg);
+  }
+}
+
+
+.ring:nth-child(2){
+  border-right-width: 8px;
+  border-color: rgb(255, 255, 255);
+  animation: rot2 2s linear infinite;
+} 
+@keyframes rot2{
+  0%{
+      transform: rotateX(50deg) rotateY(10deg) rotate(0deg);
+  }
+  100%{
+      transform: rotateX(50deg) rotateY(10deg) rotate(360deg);
+  }
+}
+.ring:nth-child(3){
+  border-top-width: 8px;
+  border-color: rgb(255, 255, 255);
+  animation: rot3 2s linear infinite;
+} 
+@keyframes rot3{
+  0%{
+      transform: rotateX(35deg) rotateY(55deg) rotate(0deg);
+  }
+  100%{
+      transform: rotateX(35deg) rotateY(55deg) rotate(360deg);
+  }
+}
+
+
+.bord{
+  border: 1px solid rgb(174, 174, 174) ;
+}
+
+/* .sml{
+animation: my 0.3s linear ease-in-out;
+
+
+}
+
+@keyframes my{
+  0%{
+    transform: translateX(-280px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+} */
+
+.sml{
+  animation: MyDiv;
+  animation-duration: 0.3s;
+  /* animation-iteration-count: 2; */
+  animation-timing-function: ease-in;
+  animation-direction: normal;
+}
+
+@keyframes MyDiv {
+  0%   {
+    left: -200px; 
+    /* top: 0px; */
+  }
+  100%  {
+    right: 0px; 
+    /* top: 0px; */
+  }
+}
+
+
+.menu div{
+position: relative;
+width: 30px;
+
+}
+.menu span{
+  background-color: rgb(19, 37, 233);
+width: 100%;
+height: 2px;
+position: absolute;
+border-radius: 20px;
+}
+
+
+
+.openmenu .line1{
+  width: 0;
+  transition: all 0.1s;
+  background-color: rgb(19, 37, 233);
+
+}
+
+.openmenu .line2{
+  background-color: rgb(19, 37, 233);
+ animation: one 2s linear forwards;
+}
+.openmenu .line3{
+  animation: two 2s linear forwards;
+  background-color: rgb(19, 37, 233);
+}
+
+/* @keyframes one{
+  0%{
+      transform: rotate(0deg);
+      margin-top: 61%;
+  }
+  50%{
+      transform: rotate(90deg);
+      margin-top: 61%;
+  }
+  100%{
+      transform: rotate(45deg) translateY(45%);
+      margin-top: 61%;
+  }
+} 
+@keyframes two{
+  0%{
+      transform: rotate(0deg);
+      margin-bottom: 50%;
+  }
+  50%{
+      transform: rotate(-90deg);
+    
+  }
+  100%{
+      transform: rotate(-45deg) translateY(45%);
+     
+  }
+}  */
+
+
+.burger-menu{
+  height: 2rem;
+  width: 2em;
+  
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  cursor: pointer;
+ margin-top: 10px;
+}
+.burger-bar{
+  width: 2em;
+  background-color: rgb(22, 22, 232);
+height: 3px;
+
+}
+
+.burger-bar.clicked:nth-child(1){
+transform: rotate(45deg) translate(0.7em, 0.8em);
+transition: ease-out 0.5;
+}
+.burger-bar.clicked:nth-child(2){
+  transform: scale(0.1);
+  transition: ease-out 0.5;
+  }
+  .burger-bar.clicked:nth-child(3){
+    transform: rotate(-45deg) translate(0.5em, -0.7em);
+    transition: ease-out 0.5;
+    }
+    .burger-bar.unclicked{
+      transform: rotate(0) translate(0);
+      transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+    }
