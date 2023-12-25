@@ -1,12 +1,12 @@
 
 import { useState,useEffect } from 'react';
 import './App.css';
-import Background from './Background';
-import Hero from './Hero';
-import Nav from './Nav';
-import Services from './Services';
-import Video from './Video';
-import Components from './Components';
+import Background from './HomePage/Background';
+import Hero from './HomePage/Hero';
+import Nav from './HomePage/Nav';
+import Services from './HomePage/Services';
+import Video from './HomePage/Video';
+import Components from './HomePage/Components';
 
 
 function App() {
@@ -14,7 +14,7 @@ const[load,setload] = useState(false)
 
 useEffect(() => {
   
-setload(true);
+// setload(true);
   setTimeout(() => {
     setload(false)
   }, 3000)

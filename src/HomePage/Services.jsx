@@ -21,23 +21,23 @@ const Services = () => {
             </p>
           </div>
           <div className=" md:ml-[55px] ml-[30px]">
-            <p className="hover:border-b-[1px] hover:border-b-gray-500">
+            <p className="hover:border-b-[1px] w-fit hover:border-b-gray-500">
               Custom Software <br /> Development
             </p>
-            <p className="hover:border-b-[1px] hover:border-b-gray-500">
+            <p className="hover:underline">
               Web App Development
             </p>
-            <p className="hover:border-b-[1px] hover:border-b-gray-500">
+            <p className="hover:border-b-[1px] w-fit hover:border-b-gray-500">
               Mobile app development
             </p>
-            <p className="hover:border-b-[1px] hover:border-b-gray-500 ">
+            <p className="hover:border-b-[1px] w-fit hover:border-b-gray-500 ">
               UI/UX Design
             </p>
-            <p className="hover:border-b-[1px] hover:underline">QA Testing</p>
-            <p className="hover:border-b-[1px] hover:border-b-gray-500">
+            <p className="hover:border-b-[1px] w-fit hover:underline">QA Testing</p>
+            <p className="hover:border-b-[1px] w-fit hover:border-b-gray-500">
               DevOps
             </p>
-            <p className="hover:border-b-[1px] hover:border-b-gray-500">
+            <p className="hover:border-b-[1px] w-fit hover:border-b-gray-500">
               Application Re-Engineering
             </p>
           </div>

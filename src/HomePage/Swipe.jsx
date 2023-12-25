@@ -6,9 +6,9 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import child2 from "./images/child2.png";
 import child1 from "./images/child1.png";
-import yes from "./images/yes.jpg";
+
 import lip from "./images/lip.png";
-import bg from "./images/bg.webp";
+
 import "swiper/css";
 import tech from "./images/tech.webp";
 import tec2 from "./images/tec2.webp";
@@ -149,3 +149,31 @@ const Swipe = () => {
 };
 
 export default Swipe;
+{/* <SwiperSlide>
+<div className="h-[200px] bg-blue-200  w-[300px] ml-[20px]">
+  <p className="font-bold text-[30px]">Pakistan</p>
+  <p>hgdgygw dgwdw dgvwud wdgwuygwyuy dgwygd</p>
+  <p className="font-bold text-[20px]">58504838394</p>
+</div>
+</SwiperSlide>
+<SwiperSlide>
+<div className="h-[200px] bg-blue-200  w-[300px] ml-[20px]">
+  <p className="font-bold text-[30px]">Pakistan</p>
+  <p>hgdgygw dgwdw dgvwud wdgwuygwyuy dgwygd</p>
+  <p className="font-bold text-[20px]">58504838394</p>
+</div>
+</SwiperSlide>
+<SwiperSlide>
+<div className="h-[200px] bg-blue-200  w-[300px] ml-[20px]">
+  <p className="font-bold text-[30px]">Pakistan</p>
+  <p>hgdgygw dgwdw dgvwud wdgwuygwyuy dgwygd</p>
+  <p className="font-bold text-[20px]">58504838394</p>
+</div>
+</SwiperSlide>
+<SwiperSlide>
+<div className="h-[200px] bg-blue-200  w-[300px] ml-[20px]">
+  <p className="font-bold text-[30px]">Pakistan</p>
+  <p>hgdgygw dgwdw dgvwud wdgwuygwyuy dgwygd</p>
+  <p className="font-bold text-[20px]">58504838394</p>
+</div>
+</SwiperSlide> */}

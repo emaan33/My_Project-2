@@ -2,19 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
-/* .costom-shadow{
-    box-shadow: inset 2px 2px 15px rgba(0, 0, 0, 0.6)
-} */
-
-/* .div {
-   box-shadow: 0;
-    transition: box-shadow 1s ease-in-out;
-
-    box-shadow: 2px 10px 3px #ff0000;
-  } */
   .custom-box-shadow {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6), 0 1px 3px rgba(0, 0, 0, 0.6);
   }
@@ -26,7 +13,10 @@
    
     color: rgb(76, 76, 216);
   }
- 
+ .our-client:hover .our-client-div{
+width: 50px;
+transition: all 1s;
+ }
   .button:hover .hovbtn{
     transform: translateX(17%);
   }
@@ -53,15 +43,6 @@
     position: absolute;
     top:0
   }
-  /* .bggg{
-    position: absolute;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-width: 100%;
-height: 100%;
-  } */
   .menu{
     width: 100%;
     height: 6em;
@@ -159,21 +140,6 @@ position: absolute;
   border: 1px solid rgb(174, 174, 174) ;
 }
 
-/* .sml{
-animation: my 0.3s linear ease-in-out;
-
-
-}
-
-@keyframes my{
-  0%{
-    transform: translateX(-280px);
-  }
-  100%{
-    transform: translateX(0px);
-  }
-} */
-
 .sml{
   animation: MyDiv;
   animation-duration: 0.3s;
@@ -225,35 +191,6 @@ border-radius: 20px;
   background-color: rgb(19, 37, 233);
 }
 
-/* @keyframes one{
-  0%{
-      transform: rotate(0deg);
-      margin-top: 61%;
-  }
-  50%{
-      transform: rotate(90deg);
-      margin-top: 61%;
-  }
-  100%{
-      transform: rotate(45deg) translateY(45%);
-      margin-top: 61%;
-  }
-} 
-@keyframes two{
-  0%{
-      transform: rotate(0deg);
-      margin-bottom: 50%;
-  }
-  50%{
-      transform: rotate(-90deg);
-    
-  }
-  100%{
-      transform: rotate(-45deg) translateY(45%);
-     
-  }
-}  */
-
 
 .burger-menu{
   height: 2rem;
@@ -289,3 +226,72 @@ transition: ease-out 0.5;
       transform: rotate(0) translate(0);
       transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
     }
+    .card{
+      position: relative;
+      transition: 0.3s;
+     
+  }
+  .content{
+ 
+    opacity: 1;
+    transition: 0.4s;
+    position: absolute;
+    height: 0px;
+  
+    width: 350px;
+}
+
+ .card:hover .content{
+    /* opacity: 0.6; */
+    background: rgba(68, 40, 106, 0.2);
+    backdrop-filter: blur(5px);
+    transform: translateY(-80px);
+    overflow: hidden;
+    height: 80px;
+    width: 350px;
+  animation: para 2s linear ease-in;
+} 
+.read{
+  opacity: 0;
+}
+.card:hover .read{
+  opacity: 1;
+}
+/* 
+sTRIPE */
+
+.main{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(233, 233, 233);
+}
+.stripe{
+  overflow: hidden;
+  width: 100%;
+  padding: 3vw 0;
+  background-color: rgb(237, 237, 237);
+  display: flex;
+}
+.cnt{
+  width: fit-content;
+  display: flex;
+  
+  align-items: center;
+}
+.elem{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  padding: 0 2vw;
+  flex-shrink: 0;
+  animation: move 5s linear infinite;
+}
+
+@keyframes move{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import logo from "./images/logo.png";
 import bg from "./images/bg.webp";
-import "./index.css";
-import SmallN from "./SMALL/SmallN";
+import '../index.css'
+import SmallN from "../SMALL/SmallN";
 import Hamburger from "hamburger-react";
-import SmlSer from "./SMALL/SmlSer";
-import Icon from "./SMALL/Icon";
+import SmlSer from "../SMALL/SmlSer";
+import Icon from "../SMALL/Icon";
 
 const Nav = () => {
   const [hover, sethover] = useState(false);
