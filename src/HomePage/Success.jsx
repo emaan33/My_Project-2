@@ -14,9 +14,12 @@ const Success = () => {
           Success <span className="text-blue-700 ">Stories</span>
         </p>
       </div>
-      <div className="max-w-[1344px]  mx-[70px] flex max-h-[500px]">
+     <div>
+    
+    <div className="max-w-[1344px]  mx-[70px] flex max-h-[500px]">
         <Swipe />
       </div>
+     </div>
 
       <div>
         <div className=" flex justify-center items-center">

@@ -12,22 +12,38 @@ import lip from "./images/lip.png";
 import "swiper/css";
 import tech from "./images/tech.webp";
 import tec2 from "./images/tec2.webp";
+import { SwipeButton } from "./SwipeButton";
 const Swipe = () => {
   return (
+    
     <Swiper
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={50}
-      slidesPerView={2}
-      navigation
+      modules={[Navigation, Pagination, A11y]}
+      // spaceBetween={20}
+      // slidesPerView={4}
+      breakpoints={{
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+      }}
+      // navigation
       pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
+      // scrollbar={{ draggable: true }}
       // onSwiper={(swiper) => console.log(swiper)}
       // onSlideChange={() => console.log('slide change')}
     >
       <SwiperSlide>
         {" "}
         <div>
-          <div className=" w-[450px] ml-[20px]  rounded-md  bg-slate-300">
+          <div className=" max-w-[450px]   rounded-md  bg-slate-300">
             <div>
               <img
                 className="h-[300px] w-[450px] rounded-md"
@@ -57,7 +73,247 @@ const Swipe = () => {
       <SwiperSlide>
         {" "}
         <div>
-          <div className=" w-[450px] ml-[20px]  rounded-md  bg-slate-300">
+          <div className=" max-w-[450px]   rounded-md  bg-slate-300">
+            <div>
+              <img
+                className="h-[300px] w-[450px] rounded-md"
+                src={child1}
+                alt=""
+              />
+            </div>
+            <div className="p-3 flex mt-[10px]">
+              <div className="ml-[10px]">
+                <img className="rounded-[50%] w-[60px]" src={lip} alt="" />
+              </div>
+              <div className="flex flex-col justify-center ml-[10px]">
+                <p className="font-bold">Robert Schulte</p>
+                <p className="text-[12px] opacity-60">CEO</p>
+              </div>
+            </div>
+            <div className="px-3 flex ">
+              <p>
+                “We contacted tkxel to may slow things down, but in this case,
+                it actually speeds things up. I appreciate tkxel Can-Do attitude
+                and speed of work.”Read Less
+              </p>
+            </div>
+          </div>
+        </div>{" "}
+      </SwiperSlide>
+      <SwiperSlide>
+        {" "}
+        <div>
+          <div className=" max-w-[450px]   rounded-md  bg-slate-300">
+            <div>
+              <img
+                className="h-[300px] w-[450px] rounded-md"
+                src={child1}
+                alt=""
+              />
+            </div>
+            <div className="p-3 flex mt-[10px]">
+              <div className="ml-[10px]">
+                <img className="rounded-[50%] w-[60px]" src={lip} alt="" />
+              </div>
+              <div className="flex flex-col justify-center ml-[10px]">
+                <p className="font-bold">Robert Schulte</p>
+                <p className="text-[12px] opacity-60">CEO</p>
+              </div>
+            </div>
+            <div className="px-3 flex ">
+              <p>
+                “We contacted tkxel to may slow things down, but in this case,
+                it actually speeds things up. I appreciate tkxel Can-Do attitude
+                and speed of work.”Read Less
+              </p>
+            </div>
+          </div>
+        </div>{" "}
+      </SwiperSlide>
+      <SwiperSlide>
+        {" "}
+        <div>
+          <div className=" max-w-[450px]   rounded-md  bg-slate-300">
+            <div>
+              <img
+                className="h-[300px] w-[450px] rounded-md"
+                src={child1}
+                alt=""
+              />
+            </div>
+            <div className="p-3 flex mt-[10px]">
+              <div className="ml-[10px]">
+                <img className="rounded-[50%] w-[60px]" src={lip} alt="" />
+              </div>
+              <div className="flex flex-col justify-center ml-[10px]">
+                <p className="font-bold">Robert Schulte</p>
+                <p className="text-[12px] opacity-60">CEO</p>
+              </div>
+            </div>
+            <div className="px-3 flex ">
+              <p>
+                “We contacted tkxel to may slow things down, but in this case,
+                it actually speeds things up. I appreciate tkxel Can-Do attitude
+                and speed of work.”Read Less
+              </p>
+            </div>
+          </div>
+        </div>{" "}
+      </SwiperSlide>
+      <SwiperSlide>
+        {" "}
+        <div>
+          <div className=" max-w-[450px]   rounded-md  bg-slate-300">
+            <div>
+              <img
+                className="h-[300px] w-[450px] rounded-md"
+                src={child1}
+                alt=""
+              />
+            </div>
+            <div className="p-3 flex mt-[10px]">
+              <div className="ml-[10px]">
+                <img className="rounded-[50%] w-[60px]" src={lip} alt="" />
+              </div>
+              <div className="flex flex-col justify-center ml-[10px]">
+                <p className="font-bold">Robert Schulte</p>
+                <p className="text-[12px] opacity-60">CEO</p>
+              </div>
+            </div>
+            <div className="px-3 flex ">
+              <p>
+                “We contacted tkxel to may slow things down, but in this case,
+                it actually speeds things up. I appreciate tkxel Can-Do attitude
+                and speed of work.”Read Less
+              </p>
+            </div>
+          </div>
+        </div>{" "}
+      </SwiperSlide>
+      <SwiperSlide>
+        {" "}
+        <div>
+          <div className=" max-w-[450px]   rounded-md  bg-slate-300">
+            <div>
+              <img
+                className="h-[300px] w-[450px] rounded-md"
+                src={child1}
+                alt=""
+              />
+            </div>
+            <div className="p-3 flex mt-[10px]">
+              <div className="ml-[10px]">
+                <img className="rounded-[50%] w-[60px]" src={lip} alt="" />
+              </div>
+              <div className="flex flex-col justify-center ml-[10px]">
+                <p className="font-bold">Robert Schulte</p>
+                <p className="text-[12px] opacity-60">CEO</p>
+              </div>
+            </div>
+            <div className="px-3 flex ">
+              <p>
+                “We contacted tkxel to may slow things down, but in this case,
+                it actually speeds things up. I appreciate tkxel Can-Do attitude
+                and speed of work.”Read Less
+              </p>
+            </div>
+          </div>
+        </div>{" "}
+      </SwiperSlide>
+      <SwiperSlide>
+        {" "}
+        <div>
+          <div className=" max-w-[450px]   rounded-md  bg-slate-300">
+            <div>
+              <img
+                className="h-[300px] w-[450px] rounded-md"
+                src={child1}
+                alt=""
+              />
+            </div>
+            <div className="p-3 flex mt-[10px]">
+              <div className="ml-[10px]">
+                <img className="rounded-[50%] w-[60px]" src={lip} alt="" />
+              </div>
+              <div className="flex flex-col justify-center ml-[10px]">
+                <p className="font-bold">Robert Schulte</p>
+                <p className="text-[12px] opacity-60">CEO</p>
+              </div>
+            </div>
+            <div className="px-3 flex ">
+              <p>
+                “We contacted tkxel to may slow things down, but in this case,
+                it actually speeds things up. I appreciate tkxel Can-Do attitude
+                and speed of work.”Read Less
+              </p>
+            </div>
+          </div>
+        </div>{" "}
+      </SwiperSlide>
+      <SwiperSlide>
+        {" "}
+        <div>
+          <div className=" max-w-[450px]   rounded-md  bg-slate-300">
+            <div>
+              <img
+                className="h-[300px] w-[450px] rounded-md"
+                src={child1}
+                alt=""
+              />
+            </div>
+            <div className="p-3 flex mt-[10px]">
+              <div className="ml-[10px]">
+                <img className="rounded-[50%] w-[60px]" src={lip} alt="" />
+              </div>
+              <div className="flex flex-col justify-center ml-[10px]">
+                <p className="font-bold">Robert Schulte</p>
+                <p className="text-[12px] opacity-60">CEO</p>
+              </div>
+            </div>
+            <div className="px-3 flex ">
+              <p>
+                “We contacted tkxel to may slow things down, but in this case,
+                it actually speeds things up. I appreciate tkxel Can-Do attitude
+                and speed of work.”Read Less
+              </p>
+            </div>
+          </div>
+        </div>{" "}
+      </SwiperSlide>
+      <SwiperSlide>
+        {" "}
+        <div>
+          <div className=" max-w-[450px]   rounded-md  bg-slate-300">
+            <div>
+              <img
+                className="h-[300px] w-[450px] rounded-md"
+                src={child1}
+                alt=""
+              />
+            </div>
+            <div className="p-3 flex mt-[10px]">
+              <div className="ml-[10px]">
+                <img className="rounded-[50%] w-[60px]" src={lip} alt="" />
+              </div>
+              <div className="flex flex-col justify-center ml-[10px]">
+                <p className="font-bold">Robert Schulte</p>
+                <p className="text-[12px] opacity-60">CEO</p>
+              </div>
+            </div>
+            <div className="px-3 flex ">
+              <p>
+                “We contacted tkxel to may slow things down, but in this case,
+                it actually speeds things up. I appreciate tkxel Can-Do attitude
+                and speed of work.”Read Less
+              </p>
+            </div>
+          </div>
+        </div>{" "}
+      </SwiperSlide>
+      <SwiperSlide>
+        {" "}
+        <div>
+          <div className=" max-w-[450px] h-[540px]   rounded-md  bg-slate-300">
             <div>
               <img
                 className="transition duration-300 rounded-md"
@@ -87,7 +343,7 @@ const Swipe = () => {
       <SwiperSlide>
         {" "}
         <div>
-          <div className=" w-[450px] ml-[20px]  rounded-md  bg-slate-300">
+          <div className=" max-w-[450px]  rounded-md  bg-slate-300">
             <div>
               <img
                 className=" h-[300px] w-[450px] rounded-md"
@@ -116,7 +372,7 @@ const Swipe = () => {
       </SwiperSlide>
       <SwiperSlide>
         <div>
-          <div className=" w-[450px] ml-[20px]  rounded-md  bg-slate-300">
+          <div className=" max-w-[450px] h-[540px]  rounded-md  bg-slate-300">
             <div>
               <img
                 className="transition duration-300 rounded-md"
@@ -144,6 +400,8 @@ const Swipe = () => {
         </div>{" "}
       </SwiperSlide>
       ...
+
+      <SwipeButton />
     </Swiper>
   );
 };

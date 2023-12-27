@@ -12,6 +12,8 @@ import ClientHero from "../ClientPage/ClientHero";
 import ComNav from "../CompanyPage/ComNav";
 import ComHero from "../CompanyPage/ComHero";
 import PodHero from "../PodcastPage/PodHero";
+import S1 from "../ServiceArrow/S1";
+import Example from "../Example";
 
 const Components = () => {
   return (
@@ -26,7 +28,10 @@ const Components = () => {
       <ClientHero /> */}
     {/* <ComNav />
     <ComHero /> */}
-    <PodHero />
+    {/* <PodHero /> */}
+    <S1 />
+    {/* <Example /> */}
+    {/* <Swipe /> */}
     </div>
   );
 };

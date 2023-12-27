@@ -3,8 +3,8 @@ import React, { useState } from 'react'
 const ClientNav = () => {
     const [hover, sethover] = useState(false);
   return (
-    <div>
-        <div className=" hidden md:flex  bg-white py-3 pl-5 ">
+    <div className=''>
+        <div className=" hidden fixed w-full z-10 md:flex bg-white opacity-100 shadow-md py-3 pl-5 ">
         <div className="md:flex hidden items-center text-4xl font-extrabold text-black">
           <p className="changeme">tkxel</p>
         </div>

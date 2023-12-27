@@ -9,8 +9,8 @@ import clu from "./images/clu.png";
 import goog from "./images/goog.png";
 const Footer = () => {
   return (
-    <div>
-      <div className="h-[100vh] hidden md:block bg-slate-50 px-[40px]">
+    <div className="">
+      <div className="h-[100vh] pt-[60px] hidden md:block bg-slate-50 px-[40px]">
         <div className=" md:flex">
           <div className="ml-[50px] pt-[30px] mr-[40px]">
             <div className="md:flex hidden items-center text-4xl font-extrabold text-blue-700">
